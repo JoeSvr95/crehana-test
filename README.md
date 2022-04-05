@@ -6,7 +6,7 @@ This projects was written using FastAPI and Graphene for a GraphQL API. All the 
 docker-compose up
 ```
 
-It uses SQLAlchemy as a ORM and Alembic for migrations
+It uses SQLAlchemy as a ORM and Alembic for migrations.
 
 ## Integration with JSONPlaceholder
 
@@ -20,7 +20,7 @@ The integration is made up of an API Rest that hits the JSONPlaceholder API endp
 - `GET /posts/<post_id>/comments` -> Retrives all comments from a post and saves them in the database
 - `GET /comments?post_id=<post_id>` -> Retrives all comments from a post
 
-In order to save data from JSONPlaceholder, use the `/posts` endpoint to save posts and the `/posts/<post_id>/comments` to save comments of a particular post
+In order to save data from JSONPlaceholder, use the `/posts` endpoint to save posts and the `/posts/<post_id>/comments` to save comments of a particular post.
 
 ## GraphQL API
 
@@ -38,3 +38,11 @@ The following queries are available:
 - `commentById` -> Gets a comment by its ID
 - `commentsByName` -> Gets a comment by the name of the person that posted the comment
 - `commentByIdAndPostId` -> Gets a comment by its ID and the post ID it belongs to
+
+## Tests
+
+To run unit test use the following command:
+
+```shell
+docker-compose run app python -m unittest
+```
