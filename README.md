@@ -39,6 +39,11 @@ The following queries are available:
 - `commentsByName` -> Gets a comment by the name of the person that posted the comment
 - `commentByIdAndPostId` -> Gets a comment by its ID and the post ID it belongs to
 
+And the following mutations are available:
+
+- `createNewPost` -> Creates a new post
+- `createNewComment` -> Creates a new comment associated with a post
+
 ## Tests
 
 To run unit test use the following command:
